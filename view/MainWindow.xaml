@@ -19,6 +19,8 @@
         <usercontrols:TestString />
         <usercontrols:TestListString/>
         <usercontrols:TestMessages/>
+        <usercontrols:UserControlMessageTemplate/>
         <usercontrols:UserControlRandom/>
+        
     </StackPanel>
 </Window>

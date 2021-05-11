@@ -72,6 +72,41 @@ namespace view.ViewModels
             }
         }
 
+        public ICommand EditFirstMessageTemplate
+        {
+            get
+            {
+                return new RelayCommand(param =>
+                {
+                    Messages[0].Contenu = "Contenue Modifié";
+                },
+                param => Messages.Count > 0);
+            }
+        }
+
+        public ICommand EditThisMessage
+        {
+            get
+            {
+                return new RelayCommand(param =>
+                {
+                    (param as Message).Contenu = "Modifié";
+                },
+                param => Messages.Count > 0);
+            }
+        }
+
+        public ICommand DeleteThisMessage
+        {
+            get
+            {
+                return new RelayCommand(param =>
+                {
+                    Messages.Remove(param as Message);
+                },
+                param => Messages.Count > 0);
+            }
+        }
 
     }
 }
