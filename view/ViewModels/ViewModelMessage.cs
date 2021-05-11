@@ -90,7 +90,7 @@ namespace view.ViewModels
             {
                 return new RelayCommand(param =>
                 {
-                    (param as Message).Contenu = "Modifié";
+                    param = "Modifié";
                 },
                 param => Messages.Count > 0);
             }
