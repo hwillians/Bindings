@@ -1,26 +1,22 @@
-﻿<Window x:Class="view.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Window x:Class="view.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:usercontrols="clr-namespace:view.UserControls"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:usercontrols="clr-namespace:view.UserControls" mc:Ignorable="d" Title="MainWindow" Height="450"
+        Width="800">
     <StackPanel>
-        <Menu x:Name="MenuTask" >
-            <MenuItem Header="String" />
-            <MenuItem Header="List String" />
-            <MenuItem Header="Message" />
-            <MenuItem Header="Random Number" />
-
-
-
+        <Menu x:Name="MenuTask">
+            <MenuItem Header="String" Click="MenuItem_Click" Uid="0" />
+            <MenuItem Header="List String" Click="MenuItem_Click" Uid="1" />
+            <MenuItem Header="Message" Click="MenuItem_Click" Uid="2" />
+            <MenuItem Header="Random Number" Click="MenuItem_Click" Uid="3" />
+            <MenuItem Header="Message Template" Click="MenuItem_Click" Uid="4" />
         </Menu>
-
-        <usercontrols:TestString />
+        <ContentControl x:Name="view" Margin="100,10,100,0" />
+        <!--<usercontrols:TestString />
         <usercontrols:TestListString/>
         <usercontrols:TestMessages/>
         <usercontrols:UserControlMessageTemplate/>
-        <usercontrols:UserControlRandom/>
-        
+        <usercontrols:UserControlRandom/>-->
     </StackPanel>
 </Window>
