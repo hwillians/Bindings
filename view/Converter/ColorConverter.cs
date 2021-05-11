@@ -7,16 +7,9 @@ namespace view.Converter
 {
     public class ColorConverter : IValueConverter
     {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            int number = (int)value;
-
-            if (number < 10)
-            {
-                return new SolidColorBrush(Colors.Red);
-            }
-            else return new SolidColorBrush(Colors.Green);
-        }
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture) =>
+            (int)value < 10 ? new SolidColorBrush(Colors.Red) : new SolidColorBrush(Colors.Green);
+        
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {

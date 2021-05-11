@@ -7,8 +7,8 @@ namespace view.ViewModels
 {
     public class ViewModelRandom : ViewModelBase
     {
-       
-        private int randomNumber = new Random().Next(0, 20);
+
+        private int randomNumber = 0;
 
         public int RandomNumber
         {

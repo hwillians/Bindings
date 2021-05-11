@@ -13,7 +13,7 @@ namespace view.ViewModels
             set
             {
                 test = value;
-                OnPropertyChanged("Test");
+                OnPropertyChanged(nameof(Test));
             }
         }
 
