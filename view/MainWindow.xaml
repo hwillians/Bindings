@@ -8,15 +8,15 @@
         <Menu x:Name="MenuTask">
             <MenuItem Header="String" Click="MenuItem_Click" Uid="0" />
             <MenuItem Header="List String" Click="MenuItem_Click" Uid="1" />
-            <MenuItem Header="Message" Click="MenuItem_Click" Uid="2" />
+            <MenuItem Header="Messages" Click="MenuItem_Click" Uid="2" />
             <MenuItem Header="Random Number" Click="MenuItem_Click" Uid="3" />
-            <MenuItem Header="Message Template" Click="MenuItem_Click" Uid="4" />
+            <MenuItem Header="Messages Template" Click="MenuItem_Click" Uid="4" />
+            <MenuItem Header="Images Template" Click="MenuItem_Click" Uid="5" />
+            <MenuItem Header="Label" Click="MenuItem_Click" Uid="6" />
+            <MenuItem Header="Bouton Rond" Click="MenuItem_Click" Uid="7" />
+            <MenuItem Header="Compteur" Click="MenuItem_Click" Uid="8" />
+            <MenuItem Header="Find" Click="MenuItem_Click" Uid="9" />
         </Menu>
         <ContentControl x:Name="view" Margin="100,10,100,0" />
-        <!--<usercontrols:TestString />
-        <usercontrols:TestListString/>
-        <usercontrols:TestMessages/>
-        <usercontrols:UserControlMessageTemplate/>
-        <usercontrols:UserControlRandom/>-->
     </StackPanel>
 </Window>

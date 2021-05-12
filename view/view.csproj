@@ -70,6 +70,21 @@
     <Compile Include="UserControls\TestString.xaml.cs">
       <DependentUpon>TestString.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UserControlBoutonRond.xaml.cs">
+      <DependentUpon>UserControlBoutonRond.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlCompteur.xaml.cs">
+      <DependentUpon>UserControlCompteur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlFind.xaml.cs">
+      <DependentUpon>UserControlFind.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlImages.xaml.cs">
+      <DependentUpon>UserControlImages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlLabel.xaml.cs">
+      <DependentUpon>UserControlLabel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UserControlMessageTemplate.xaml.cs">
       <DependentUpon>UserControlMessageTemplate.xaml</DependentUpon>
     </Compile>
@@ -77,6 +92,9 @@
       <DependentUpon>UserControlRandom.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="ViewModels\ViewModelCompteur.cs" />
+    <Compile Include="ViewModels\ViewModelFind.cs" />
+    <Compile Include="ViewModels\ViewModelImages.cs" />
     <Compile Include="ViewModels\ViewModelListString.cs" />
     <Compile Include="ViewModels\ViewModelRandom.cs" />
     <Compile Include="ViewModels\ViewModelMessage.cs" />
@@ -102,6 +120,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\TestString.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlBoutonRond.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlCompteur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlFind.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlImages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlLabel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -141,5 +179,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Resource Include="images\img1.jpg" />
+    <Resource Include="images\img2.jpg" />
+    <Resource Include="images\img3.jpg" />
+    <Resource Include="images\img4.jpg" />
+    <Resource Include="images\img5.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

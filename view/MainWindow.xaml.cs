@@ -31,6 +31,11 @@ namespace view
 				case "2": GetContent(new TestMessages()); break;
 				case "3": GetContent(new UserControlRandom()); break;
 				case "4": GetContent(new UserControlMessageTemplate()); break;
+				case "5": GetContent(new UserControlImages()); break;
+				case "6": GetContent(new UserControlLabel()); break;
+				case "7": GetContent(new UserControlBoutonRond()); break;
+				case "8": GetContent(new UserControlCompteur()); break;
+				case "9": GetContent(new UserControlFind()); break;
 				default: break;
 			}
 		}

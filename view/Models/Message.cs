@@ -1,21 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace view.Models
 {
-    public class Message
-    {
-        public string Emetteur { get; set; }
-        public string Contenu { get; set; }
-        public DateTime Date { get; set; }
+	public class Message : INotifyPropertyChanged
+	{
+		public event PropertyChangedEventHandler PropertyChanged;
+		protected void OnPropertyChanged(string name)
+		{
+			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+		}
+		public string Emetteur { get; set; }
+		private string contenu;
 
-        public override string ToString()
-        {
-            return $"{Emetteur} : {Contenu} \n {Date}";
-        }
-    }
+		public string Contenu
+		{
+			get { return contenu; }
+			set
+			{
+				contenu = value;
+				OnPropertyChanged(nameof(Contenu));
+			}
+		}
+
+		public DateTime Date { get; set; }
+
+
+		public override string ToString()
+		{
+			return $"{Emetteur} : {Contenu} \n {Date}";
+		}
+	}
 }
